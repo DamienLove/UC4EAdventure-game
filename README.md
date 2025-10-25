@@ -19,10 +19,7 @@ This repository contains a self-contained pygame prototype for Level 1 of **UNIV
 
    ```bash
    python -m venv .venv
-   # macOS / Linux
    source .venv/bin/activate
-   # Windows (PowerShell)
-   .\\.venv\\Scripts\\Activate.ps1
    pip install -r requirements.txt
    ```
 
