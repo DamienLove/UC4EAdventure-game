@@ -53,6 +53,11 @@ This repository contains a self-contained pygame prototype for Level 1 of **UNIV
       ```bash
       pip install -r requirements.txt
       ```
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
 2. **Run the prototype**
 
