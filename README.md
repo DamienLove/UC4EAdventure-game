@@ -19,12 +19,7 @@ This repository contains a self-contained pygame prototype for Level 1 of **UNIV
 
    ```bash
    python -m venv .venv
-   # macOS / Linux shell
    source .venv/bin/activate
-   # Windows PowerShell
-   .\\.venv\\Scripts\\Activate.ps1
-   # Windows Command Prompt (cmd.exe)
-   .\\.venv\\Scripts\\activate.bat
    pip install -r requirements.txt
    ```
 
@@ -33,21 +28,6 @@ This repository contains a self-contained pygame prototype for Level 1 of **UNIV
    ```bash
    python main.py
    ```
-
-### Running inside Android Studio
-
-Android Studio (Electric Eel and newer) can run the prototype if you enable its
-Python tooling:
-
-1. Install the **Python** plugin from *Settings → Plugins* and restart the IDE.
-2. Open this folder as a project and allow Android Studio to index the files.
-3. Configure a Python interpreter via *Settings → Project → Python Interpreter*.
-   You can point it at the `.venv` environment created above (use the full path
-   to `.venv/Scripts/python.exe` on Windows or `.venv/bin/python` on macOS/Linux).
-4. Create a new **Run/Debug Configuration → Python**, set *Script path* to
-   `main.py`, and choose the interpreter from step 3.
-5. Click **Run ▶** to launch the pygame window. The IDE console mirrors the same
-   output you would see from a terminal run.
 
 ## Controls
 
