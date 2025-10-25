@@ -76,6 +76,7 @@ class Door:
             return
         draw_color = self.color
         if self.ghost:
+            draw_color = pygame.Color(self.color)
             draw_color = self.color.copy()
             draw_color.a = 120
         pygame.draw.rect(surface, draw_color, self.rect)

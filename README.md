@@ -17,6 +17,42 @@ This repository contains a self-contained pygame prototype for Level 1 of **UNIV
 
 1. **Install dependencies**
 
+   1. Create the virtual environment (run once):
+
+      ```bash
+      python -m venv .venv
+      ```
+
+   2. Activate it with the command that matches your shell:
+
+      - **Windows PowerShell**
+
+        ```powershell
+        .\.venv\Scripts\Activate.ps1
+        ```
+
+      - **Windows Command Prompt (cmd.exe)**
+
+        ```cmd
+        .\.venv\Scripts\activate.bat
+        ```
+
+      - **macOS / Linux shell**
+
+        ```bash
+        source .venv/bin/activate
+        ```
+
+      > **Tip:** If you need to recreate the environment, close any shell that is
+      > currently using `.venv` (or run `deactivate`) before deleting the folder
+      > and running `python -m venv .venv` again. This prevents the "permission
+      > denied" error that occurs when `python.exe` is still in use on Windows.
+
+   3. Install the Python requirements:
+
+      ```bash
+      pip install -r requirements.txt
+      ```
    ```bash
    python -m venv .venv
    source .venv/bin/activate
@@ -28,6 +64,21 @@ This repository contains a self-contained pygame prototype for Level 1 of **UNIV
    ```bash
    python main.py
    ```
+
+### Running inside Android Studio
+
+Android Studio (Electric Eel and newer) can run the prototype if you enable its
+Python tooling:
+
+1. Install the **Python** plugin from *Settings → Plugins* and restart the IDE.
+2. Open this folder as a project and allow Android Studio to index the files.
+3. Configure a Python interpreter via *Settings → Project → Python Interpreter*.
+   You can point it at the `.venv` environment created above (use the full path
+   to `.venv/Scripts/python.exe` on Windows or `.venv/bin/python` on macOS/Linux).
+4. Create a new **Run/Debug Configuration → Python**, set *Script path* to
+   `main.py`, and choose the interpreter from step 3.
+5. Click **Run ▶** to launch the pygame window. The IDE console mirrors the same
+   output you would see from a terminal run.
 
 ## Controls
 
